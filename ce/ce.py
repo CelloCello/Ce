@@ -19,6 +19,7 @@ class app():
     def __init__(self, name):
         self.app = Flask(name)
         self.app.debug = True
+        self.app.secret_key = "this is a key"
         #app.run(host='0.0.0.0')
 	
     def run(self, port):
